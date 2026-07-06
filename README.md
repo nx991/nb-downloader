@@ -1,7 +1,9 @@
+Markdown
 # 🔥 NBDM: High-Speed Auto-Seedbox & Cloud Uploader
 
 A custom-built, ultra-fast Node.js web panel designed to seamlessly bridge local VPS storage with cloud providers. Includes an optimized native RAM pipeline for Google Drive, Pixeldrain, and Gofile, entirely bypassing Node.js bufferbloat to max out 10Gbps+ VPS network cards without crashing.
 
+[![GitHub Repo](https://img.shields.io/badge/GitHub-nx991%2Fnb--downloader-blue?style=for-the-badge&logo=github)](https://github.com/nx991/nb-downloader)
 ![NBDM Interface](https://img.shields.io/badge/UI-Dark_Glassmorphism-emerald?style=for-the-badge)
 ![Status](https://img.shields.io/badge/Status-Stable_v1.0-blue?style=for-the-badge)
 
@@ -13,11 +15,10 @@ A custom-built, ultra-fast Node.js web panel designed to seamlessly bridge local
 * **Live Discord Webhooks:** Sends an embedded message to your Discord server the microsecond a folder successfully finishes uploading, complete with direct URLs.
 
 ## 🚀 One-Click Installation (Ubuntu VPS)
-Log into your fresh Ubuntu VPS via SSH and run this single command. It will automatically install Node.js, qBittorrent-nox, the VueTorrent Dark Theme, PM2, and deploy the panel.
+Log into your fresh Ubuntu VPS via SSH and run this single command. It will automatically install Node.js, qBittorrent-nox, the VueTorrent Dark Theme, PM2, and deploy the panel directly from this repository.
 
 ```bash
 curl -sL [https://raw.githubusercontent.com/nx991/nb-downloader/main/install.sh](https://raw.githubusercontent.com/nx991/nb-downloader/main/install.sh) | bash
-
 🛠 Manual Start/Stop Commands
 NB Downloader Panel (Managed by PM2):
 
