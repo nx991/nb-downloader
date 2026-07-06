@@ -12,7 +12,7 @@ apt install -y nodejs git qbittorrent-nox ufw curl
 npm install pm2 -g
 
 # 2. VueTorrent Theme & qBittorrent Configuration
-echo -e "\n\e[1;33m[2/6] Setting up VueTorrent Dark Theme...\e[0m"
+echo -e "\n\e[1;33m[2/6] Setting up VueTorrent Dark Theme & Anonymous Mode...\e[0m"
 cd /root
 rm -rf VueTorrent
 git clone --single-branch --branch latest-release https://github.com/VueTorrent/VueTorrent.git
@@ -21,6 +21,9 @@ cat << 'INI' > ~/.config/qBittorrent/qBittorrent.conf
 [Preferences]
 WebUI\AlternativeUIEnabled=true
 WebUI\RootFolder=/root/VueTorrent
+
+[BitTorrent]
+Session\AnonymousModeEnabled=true
 INI
 
 # Start qBittorrent natively as a background daemon (NO PM2 needed)
