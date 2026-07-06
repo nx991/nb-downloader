@@ -53,9 +53,9 @@ ufw allow 8080/tcp
 ufw allow 9666/tcp
 ufw --force enable
 
-# 6. Fetch IP and Display Success UI
+# 6. Fetch IP and Display Success UI (Forced IPv4)
 echo -e "\n\e[1;33m[6/6] Finalizing Setup...\e[0m"
-VPS_IP=$(curl -s ifconfig.me)
+VPS_IP=$(curl -4 -s ifconfig.me)
 
 clear
 echo -e "\e[1;32m=====================================================\e[0m"
